@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const DirectorModel = require('./models/directors')
+const DirectorModel = require('./models/directors');
+
+const cors = require('cors');
 
 app.use(express.json());
+app.use(cors());
 
 mongoose.connect("mongodb+srv://naguib123:Naguib123@cluster0.bcag4hw.mongodb.net/mernproject?retryWrites=true&w=majority");
 
