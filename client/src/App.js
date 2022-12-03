@@ -21,6 +21,8 @@ function App() {
             <div key={id}>
               <h2>Name: {director.name}</h2>
               <h2>Age: {director.age}</h2>
+              <img src="data:image/<%=image.img.contentType%>;base64,
+                     <%=image.img.data.toString('base64')%>" alt="hamada"></img>
             </div>
           )
         })}

@@ -8,6 +8,11 @@ const DirectorSchema = new mongoose.Schema({
     age: {
         type: Number,
         required: true
+    },
+    img: {
+        data: Buffer,
+        type: String,
+        required: false
     }
 });
 
