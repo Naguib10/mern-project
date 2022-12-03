@@ -7,6 +7,8 @@ const cors = require('cors');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
+var bodyParser = require('body-parser');
+require('dotenv/config');
 
 app.use(express.json());
 app.use(cors());
