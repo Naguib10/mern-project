@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import axios, { Axios } from 'axios';
+import axios from 'axios';
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
       <div className="directorsDisplay">
         {listOfDirectors.map((director, id) => {
           return (
-            <div>
+            <div key={id}>
               <h2>Name: {director.name}</h2>
               <h2>Age: {director.age}</h2>
             </div>
